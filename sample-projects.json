@@ -1,0 +1,31 @@
+{ "projects": [{
+    "name": "Potato Salad",
+    "managers": "Jimmy Chan",
+    "description": "Everyone who donates will get be mailed Potato homemade Salad.",
+    "targetAmount": "$1,000",
+    "currentAmount": "$1,000,000",
+    "intent": "Once I reach my goal I will send everyone a 16 ounce container of potato salad. Salad will be shipped in order of donation date.",
+    "swag": "Potato Salad",
+    "id": "1"
+  },
+  {
+    "name": "Help Give My Children a Christmas",
+    "managers": "Stephanie Grant",
+    "description": "As some of you watched on my You Tube channel, a few days ago, I was contacted through email by one of my subscribers who is also a fellow content creator. In her email, she explained the life difficulties she and her family are facing at the moment, and my heart went out to her because being a mother myself, I've been in situations like hers. Above all of the hardships she's facing right now, she never once asked for anything for herself, her main concern was to be able to provide a good Christmas for her beautiful children. With it being the holidays, it's about giving and I reach out to you all to help me, help her give her babies a wonderful Christmas. I know Christmas isn't all about presents, it's more than that, but how do you tell your little ones that still believe in Santa, he's not coming this year. ",
+    "targetAmount": "$500",
+    "currentAmount": "$700",
+    "intent": "Once I reach my goal I will buy my kids presents, otherwise they ain't getting shit because I'm a bad parent.",
+    "swag": "A kind heart",
+    "id": "2"
+  },
+  {
+    "name": "12th Man For Marshawn Lynch",
+    "managers": "April Daniels",
+    "description": "For those of you who are not aware, our beloved Marshawn Lynch has been fined $50,000. He doesn't make enough money so let's raise some money for him.",
+    "targetAmount": "$50,000",
+    "currentAmount": "$20,679",
+    "intent": "Once I reach my goal I will send Marshal Lynch a check of the raised amount plus keep 10% for my efforts. I am an aweful person. GO HAWKS and GO 12th MAN!!!",
+    "swag": "A thank you automated email response",
+    "id": "3"
+  }]
+}

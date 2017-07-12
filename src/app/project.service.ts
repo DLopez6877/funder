@@ -36,4 +36,9 @@ export class ProjectService {
                               });
   }
 
+  deleteProject(localProjectToDelete){
+    var projectEntryInFirebase = this.getProjectById(localProjectToDelete.$key);
+    projectEntryInFirebase.remove();
+  }
+
 }

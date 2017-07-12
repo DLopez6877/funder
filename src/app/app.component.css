@@ -32,9 +32,11 @@
 
 @media (max-height: 530px) {
   #jumbo-header {
-    width: 100%;
+    width: 100vw;
     height: auto;
     position: static;
+    margin: 0 0 30px 0;
+    max-width: none;
   }
   #jumbo-header h1 {
     transform: none;

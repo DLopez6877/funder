@@ -1,0 +1,39 @@
+<br>
+<h3>Edit Project</h3>
+<br>
+<div class="form-group">
+  <label>Edit Project Name:</label>
+  <input [(ngModel)]="selectedProject.name" class="form-control">
+</div>
+
+<div class="form-group">
+  <label>Edit Project Managers:</label>
+  <input [(ngModel)]="selectedProject.managers" class="form-control">
+</div>
+
+<div class="form-group">
+  <label>Edit Project Description:</label>
+  <input [(ngModel)]="selectedProject.description" class="form-control">
+</div>
+
+<div class="form-group">
+  <label>Edit Project Target Amount:</label>
+  <input [(ngModel)]="selectedProject.targetAmount" class="form-control">
+</div>
+
+<div class="form-group">
+  <label>Edit Project Current Amount:</label>
+  <input [(ngModel)]="selectedProject.currentAmount" class="form-control">
+</div>
+
+<div class="form-group">
+  <label>Edit Project Intent:</label>
+  <input [(ngModel)]="selectedProject.intent" class="form-control">
+</div>
+
+<div class="form-group">
+  <label>Edit Project Swag:</label>
+  <input [(ngModel)]="selectedProject.swag" class="form-control">
+</div>
+
+<button class="btn btn-default" (click)="beginUpdatingProject(selectedProject)">Update</button>

@@ -16,19 +16,23 @@
   </div>
 
   <div class="form-group">
-    <label>Project Target Amount:</label>
+    <label>Goal Amount:</label>
     <input #newTargetAmount class="form-control" placeholder="$1,000">
   </div>
 
   <div class="form-group">
-    <label>Project Intent:</label>
-    <textarea #newIntent class="form-control" placeholder="what will you do with the funds raised"></textarea>
+    <label>What will you do once you reach your goal?</label>
+    <textarea #newIntent class="form-control" placeholder="Once we reach our goal we will..."></textarea>
   </div>
 
   <div class="form-group">
-    <label>Project Swag:</label>
+    <label>Rewards for donating:</label>
     <input #newSwag class="form-control" placeholder="Potato salad and a keychain">
   </div>
 
   <button (click)="submitForm(newName.value, newManagers.value, newDescription.value, newTargetAmount.value, '$0', newIntent.value, newSwag.value); newName.value=''; newManagers.value=''; newDescription.value=''; newTargetAmount.value=''; newIntent.value=''; newSwag.value=''" class="btn btn-default">Add</button>
+</div>
+
+<div>
+  <app-browse></app-browse>
 </div>

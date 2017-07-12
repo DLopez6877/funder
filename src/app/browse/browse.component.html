@@ -1,3 +1,9 @@
-<p>
-  browse works!
-</p>
+<h2>Browse Projects</h2>
+
+<div *ngFor="let project of projects | async" (click)="goToProjectPage(project)" class="panel panel-default">
+  <div class="panel-body">
+    <h3 class="text-center">{{project.name}}</h3>
+    <hr>
+    <p class="text-center">{{project.description}}</p>
+  </div>
+</div>

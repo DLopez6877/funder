@@ -1,0 +1,34 @@
+<div class="form-simulation">
+  <h3>Add New Project</h3>
+  <div class="form-group">
+    <label>Project Name:</label>
+    <input #newName class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label>Project Managers:</label>
+    <input #newManagers class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label>Project Description:</label>
+    <textarea #newDescription class="form-control"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label>Project Target Amount:</label>
+    <input #newTargetAmount class="form-control" placeholder="$1,000">
+  </div>
+
+  <div class="form-group">
+    <label>Project Intent:</label>
+    <textarea #newIntent class="form-control" placeholder="what will you do with the funds raised"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label>Project Swag:</label>
+    <input #newSwag class="form-control" placeholder="Potato salad and a keychain">
+  </div>
+
+  <button (click)="submitForm(newName.value, newManagers.value, newDescription.value, newTargetAmount.value, '$0', newIntent.value, newSwag.value); newName.value=''; newManagers.value=''; newDescription.value=''; newTargetAmount.value=''; newIntent.value=''; newSwag.value=''" class="btn btn-default">Add</button>
+</div>

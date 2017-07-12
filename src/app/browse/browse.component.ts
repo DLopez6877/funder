@@ -22,8 +22,7 @@ export class BrowseComponent implements OnInit {
     this.projects = this.projectService.getProjects();
   }
 
-
-  goToProjectPage(clickedProject: Project) {
+  goToProjectPage(clickedProject) {
     this.router.navigate(['projects', clickedProject.$key]);
   }
 }

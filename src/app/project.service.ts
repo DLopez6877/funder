@@ -12,11 +12,11 @@ export class ProjectService {
   this.projects = database.list('projects');
  }
 
-  getProject() {
+  getProjects() {
     return this.projects;
   }
 
-  addProjectProject(newProject: Project) {
+  addProject(newProject: Project) {
     this.projects.push(newProject);
   }
 

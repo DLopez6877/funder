@@ -3,8 +3,8 @@ export class Project {
     public name: string,
     public managers: string,
     public description: string,
-    public targetAmount: number,
-    public currentAmount: number,
+    public targetAmount: string,
+    public currentAmount: string,
     public intent: string,
     public swag: string
   ) { }

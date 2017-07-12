@@ -2,7 +2,7 @@
 
 <div *ngFor="let project of projects | async" class="panel panel-default">
   <div class="panel-body">
-    <h3  (click)="goToProjectPage(project)" class="text-center">{{project.name}}</h3>
+    <a><h3  (click)="goToProjectPage(project)" class="text-center">{{project.name}}</h3></a>
     <hr>
     <p class="text-center">Current: {{project.currentAmount}} / Goal: {{project.targetAmount}}</p>
     <hr>

@@ -1,0 +1,43 @@
+.container {
+  width: 70%;
+  margin-left: 25%;
+  margin-right: 5%;
+}
+
+#jumbo-header {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#jumbo-header h1 {
+  transform: rotate(-90deg);
+}
+
+.navbar {
+  z-index: 1;
+  margin-top: 20px;
+}
+
+@media (max-height: 530px) {
+  #jumbo-header {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+  #jumbo-header h1 {
+    transform: none;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .navbar {
+    margin-bottom: 0;
+  }
+}

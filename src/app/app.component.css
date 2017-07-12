@@ -1,7 +1,12 @@
+#ultimate-container {
+  max-width: 1300px;
+}
+
 .container {
   width: 70%;
   margin-left: 25%;
   margin-right: 5%;
+  max-width: 880px;
 }
 
 #jumbo-header {
@@ -12,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 260.188px;
 }
 
 #jumbo-header h1 {
@@ -21,6 +27,7 @@
 .navbar {
   z-index: 1;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 @media (max-height: 530px) {
@@ -38,6 +45,7 @@
     width: 100%;
   }
   .navbar {
+    margin-top: 0;
     margin-bottom: 0;
   }
 }

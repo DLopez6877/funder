@@ -1,6 +1,13 @@
 <h2>Projects</h2>
-
-<div *ngFor="let project of projects | async" class="panel panel-default">
+<br>
+<h4>Filter by:</h4>
+<select class="form-control" (change)="onChange($event.target.value)">
+  <option value="potatoSalad">Completed</option>
+  <option value="travelTheUniverse">Incomplete</option>
+  <option value="all" selected="selected">All</option>
+</select>
+<br><br><br>
+<div *ngFor="let project of projects | async | completeness:filterByCompleteness" class="panel panel-default">
   <div class="panel-body">
     <a><h3  (click)="goToProjectPage(project)" class="text-center">{{project.name}}</h3></a>
     <hr>

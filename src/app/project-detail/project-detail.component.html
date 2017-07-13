@@ -6,4 +6,5 @@
   <p>Amount Currently Raised: {{(projectToDisplay | async)?.currentAmount}}</p>
   <p>{{(projectToDisplay | async)?.intent}}</p>
   <p>Swag for donating: {{(projectToDisplay | async)?.swag}}</p>
+  <button (click)="donate()" class="btn btn-default">Donate</button>
 </div>

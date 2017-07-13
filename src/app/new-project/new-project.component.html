@@ -22,7 +22,7 @@
 
   <div class="form-group">
     <label>What will you do once you reach your goal?</label>
-    <textarea #newIntent class="form-control" placeholder="Once we reach our goal we will..."></textarea>
+    <textarea onClick="this.select();" #newIntent class="form-control">Once we reach our goal we will...</textarea>
   </div>
 
   <div class="form-group">
@@ -30,5 +30,5 @@
     <input #newSwag class="form-control" placeholder="Potato salad and a keychain">
   </div>
 
-  <button (click)="submitForm(newName.value, newManagers.value, newDescription.value, newTargetAmount.value, '$0', newIntent.value, newSwag.value); newName.value=''; newManagers.value=''; newDescription.value=''; newTargetAmount.value=''; newIntent.value=''; newSwag.value=''" class="btn btn-default">Add</button>
+  <button (click)="submitForm(newName.value, newManagers.value, newDescription.value, newTargetAmount.value, '$0', newIntent.value, newSwag.value); newName.value=''; newManagers.value=''; newDescription.value=''; newTargetAmount.value=''; newIntent.value=''; newSwag.value=''" routerLink="/browse" class="btn btn-default">Add</button>
 </div>

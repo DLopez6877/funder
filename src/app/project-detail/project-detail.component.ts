@@ -31,4 +31,7 @@ export class ProjectDetailComponent implements OnInit {
     this.projectToDisplay = this.projectService.getProjectById(this.projectId);
   }
 
+  donate() {
+    alert("feature coming soon");
+  }
 }

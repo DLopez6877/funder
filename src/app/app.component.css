@@ -1,12 +1,17 @@
 #ultimate-container {
   max-width: 1300px;
+  background-size: cover;
+  position: relative;
 }
 
-.container {
+.container:not(#ultimate-container) {
   width: 70%;
   margin-left: 25%;
   margin-right: 5%;
   max-width: 880px;
+  background-color: rgba(255, 167, 160, 0.45);
+  border-radius: 0 0 30px 30px;
+  padding: 10px 30px;
 }
 
 #jumbo-header {
@@ -18,16 +23,50 @@
   align-items: center;
   justify-content: center;
   max-width: 260.188px;
+  background-color: rgba(255,167,160,.45);
+  background-image: url('../assets/bg.png');
+  background-size: 400px;
+  color: #222;
 }
 
 #jumbo-header h1 {
   transform: rotate(-90deg);
 }
 
+.background {
+  background-image: url('../assets/header.jpg');
+  background-size: cover;
+  position: fixed;
+  background-position: left;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 .navbar {
   z-index: 1;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  padding: 15px;
+}
+
+.footer a {
+  color: #444;
 }
 
 @media (max-height: 530px) {

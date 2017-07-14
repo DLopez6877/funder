@@ -102,9 +102,10 @@
     margin-bottom: 0;
   }
   .footer {
-
-    bottom: 85%;
-    left: 90%;
+    position: absolute;
+    padding: 0;
+    bottom: 5px;
+    left: calc(100% - 50px);
   }
 }
 
